@@ -6,7 +6,7 @@
 
 ### Frontend deployed on Vercel, Backend deployed on Heroku
 
-#### Main features for now:
+#### Current main features:
 
 - Users signup/login/log out by either creating new account or use Google account to sign in
 - Users can lookup books in Google Books api and then Donate to our library.
