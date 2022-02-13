@@ -89,10 +89,12 @@ function ChildModal(props) {
         },
       },
     };
-    await axios.post("./books/donate", newBook).then(() => {
-      setBookStore([newBook, ...bookStore]);
-      handleClose();
-    });
+    await axios
+      .post(`${process.env.REACT_APP_SERVER_URL}/books/donate`, newBook)
+      .then(() => {
+        setBookStore([newBook, ...bookStore]);
+        handleClose();
+      });
   };
 
   return (

@@ -73,7 +73,7 @@ function Sidebar() {
 
   useEffect(() => {
     axios
-      .get("./books/list")
+      .get(`${process.env.REACT_APP_SERVER_URL}/books/list`)
       .then((res) => {
         // setBookData(res.data);
         setBookStore(res.data);
@@ -91,7 +91,7 @@ function Sidebar() {
   useEffect(() => {
     if (!!userInfo) {
       axios
-        .get("/users/userBooks", {
+        .get(`${process.env.REACT_APP_SERVER_URL}/users/userBooks`, {
           params: { userId: userInfo?._id },
         })
         .then((res) => setUserBooks(res.data))
@@ -108,7 +108,7 @@ function Sidebar() {
   useEffect(() => {
     if (!!userInfo) {
       axios
-        .get("/users/userBooks", {
+        .get(`${process.env.REACT_APP_SERVER_URL}/users/userBooks`, {
           params: { userId: userInfo?._id },
         })
         .then((res) => setUserBooks(res.data))

@@ -46,7 +46,10 @@ export default function BookCardDetailModal({
   const handleBorrowClick = async (e) => {
     e.preventDefault();
     await axios
-      .post("/books/borrow", { bookId: _id, userId: userContext.userInfo?._id })
+      .post(`${process.env.REACT_APP_SERVER_URL}/books/borrow`, {
+        bookId: _id,
+        userId: userContext.userInfo?._id,
+      })
       .then((res) => {
         bookData.status = "unavailable";
         bookData["isInBorrow"] = true;
@@ -60,7 +63,10 @@ export default function BookCardDetailModal({
   const handleReturnClick = async (e) => {
     e.preventDefault();
     await axios
-      .put("/books/return", { bookId: _id, userId: userContext.userInfo?._id })
+      .put(`${process.env.REACT_APP_SERVER_URL}/books/return`, {
+        bookId: _id,
+        userId: userContext.userInfo?._id,
+      })
       .then((res) => {
         bookData.status = "available";
         bookData["isInBorrow"] = false;
