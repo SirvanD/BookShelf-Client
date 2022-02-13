@@ -2,7 +2,7 @@
 
 ### Fullstack, RESTful App Built by : MERN stack - ReactJS, Node.JS, Express, MongoDB <a href="https://bookshelf-client-six.vercel.app/"> Demo </a> 
 
-### Google Books API , Firebase authentication/User signup and Google signin and Material UI (MUI)
+### Google Books API , Firebase authentication/User signup,Google signin and Material UI (MUI) for front end interface
 
 ### Frontend deployed on Vercel, Backend deployed on Heroku
 
