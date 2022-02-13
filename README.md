@@ -4,7 +4,9 @@
 
 ### GOOGLE BOOKS API , Firebase authentication/User signup and Google signin and Material UI (MUI)
 
-#### Main features:
+### Frontend deployed on Vercel, Backend deployed on Heroku
+
+#### Main features for now:
 
 - Users signup/login/log out by either creating new account or use Google account to sign in
 - Users can lookup books in Google Books api and then Donate to our library.
