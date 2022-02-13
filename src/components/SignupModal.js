@@ -129,7 +129,7 @@ export default function SignupModal() {
             }}
             onClick={handleOpen}
           >
-            Sign up
+            Signup
           </Button>
           <Modal open={open} onClose={handleClose} width="400px">
             <Box sx={style}>
