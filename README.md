@@ -1,6 +1,6 @@
-# BookShelf APP - a community library
+## BookShelf APP - a community library
 
-## Fullstack, RESTful App Built by : MERN stack - ReactJS, Node.JS, Express, MongoDB <a href="https://bookshelf-client-six.vercel.app/"> Demo </a> 
+### Fullstack, RESTful App Built by : MERN stack - ReactJS, Node.JS, Express, MongoDB <a href="https://bookshelf-client-six.vercel.app/"> Demo </a> 
 
 ### GOOGLE BOOKS API , Firebase authentication/User signup and Google signin and Material UI (MUI)
 
