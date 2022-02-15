@@ -19,6 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function App() {
   const [userInfo, setUserInfo] = useState();
   const [bookStore, setBookStore] = useState([]);
+  const [show, setShow] = useState(true);
   // creating a state for storing info what we're gonna use in our context
 
   React.useEffect(() => {
@@ -37,6 +38,24 @@ export default function App() {
       // console.log(userInfo);
     }
   }, [userInfo]);
+
+  const LoadingBar = () => {
+    React.useEffect(() => {
+      const timeId = setTimeout(() => {
+        // After 3 seconds set the show value to false
+        setShow(false);
+      }, 3000);
+
+      return () => {
+        clearTimeout(timeId);
+      };
+    }, []);
+    if (!show) {
+      return null;
+    }
+
+    return setShow && <img src="../loading.gif" alt="" />;
+  };
 
   return (
     <div className="App">
@@ -64,6 +83,15 @@ export default function App() {
             <Grid item xs={12} pr={1} pl={0} pt={0} ml={0}>
               <Item>
                 <SideBar />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  {LoadingBar()}
+                </Box>
               </Item>
             </Grid>
             <Grid
@@ -73,7 +101,7 @@ export default function App() {
               alignItems="flex-end"
             >
               <Item>
-                &copy; 2022 by Sirvan Doukchi{" "}
+                &copy; 2022 by Sirvan Doukchi{"  "}
                 <a href="https://www.sirvan.dev" target="_blank">
                   www.sirvan.dev
                 </a>
