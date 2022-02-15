@@ -5,7 +5,7 @@
 ### Google Books API , Firebase authentication for User signup,Google signin and Material UI (MUI) for CSS.
 
 ### Frontend deployed on Vercel, Backend deployed on Heroku
-#### Backend respositary can be found <a href="https://github.com/SirvanD/BookShelf-Server"> Here </a>
+#### Backend respository can be found <a href="https://github.com/SirvanD/BookShelf-Server"> Here </a>
 
 #### Current main features:
 
