@@ -12,7 +12,15 @@ export default function ButtonAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{ background: "#f1f5ff" }}>
+      <AppBar
+        position="static"
+        style={{
+          background: "#f1f5ff",
+          height: "80px",
+          marginTop: "0",
+          paddingTop: "0",
+        }}
+      >
         <Toolbar>
           <Typography pt={1} variant="h4" component="div" sx={{ flexGrow: 1 }}>
             <img src="./logo.svg" alt="" />
