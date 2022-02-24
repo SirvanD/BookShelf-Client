@@ -14,6 +14,11 @@
 - Users can search in the local library, filtering the books shown in the sidebar.
 - Clicking on each book card (detail) will open a new modal with books details with the options of Borrow or Return depending on books availability.
 
+#### Features to be added
+
+- Users to borrow books
+
+
 ### Application ScreenShot
 
 ![Screenshot](bookshelf_ss.png)
